@@ -39,7 +39,14 @@ Follow standard installation steps for `HTML` to set up the project locally:
 
 ## 💻 Usage
 
-Run the project using standard execution commands for `HTML`. Ensure all environment variables and configurations are set prior to execution.
+```bash
+pip install -r requirements.txt   # only typing_extensions
+python -m pytest tests/           # run the test suite
+python -m src.main                # run the matchmaking simulation (from repo root)
+```
+
+Note: this is a matchmaking *algorithm* simulation (queue buckets, Elo tiers) —
+it has no network transport; a real server would need a WebSocket/HTTP layer.
 
 ## 🤝 Contributing
 
